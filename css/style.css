@@ -20,8 +20,29 @@ html {
     min-height: 500px;
 }
 
-@media(max-width: 568px){
+.input__wrapper {
+    margin-bottom: 5px;
+}
+
+.form__label {
+    display: inline-block;
+    width: 98px;
+}
+
+.button__wrapper {
+    text-align: center;
+}
+
+@media(min-width: 568px){
     .parallax {
         background-attachment: scroll;
+    }
+
+    .input__wrapper {
+        text-align: center;
+    }
+
+    .form__input {
+        width: 220px;
     }
 }

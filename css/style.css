@@ -1,0 +1,27 @@
+html {
+    margin: 10px;
+}
+
+.parallax {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.parallax1 {
+    background-image: url('https://placekitten.com/700/600');
+    min-height: 500px;
+}
+
+.parallax2 {
+    background-image: url('https://placekitten.com/700/600');
+    min-height: 500px;
+}
+
+@media(max-width: 568px){
+    .parallax {
+        background-attachment: scroll;
+    }
+}

@@ -2,6 +2,8 @@ html {
     margin: 10px;
 }
 
+
+
 .section__wrapper {
     position: relative;
     box-shadow: 0px 5px 5px #000;
@@ -16,7 +18,25 @@ html {
     display: flex;
     margin-bottom: 0px;
     flex-direction: column;
-    padding-bottom: 5px;
+    padding-bottom: 19px;
+    justify-content: space-around;
+}
+
+.text__wrapper--vertical__centered {
+    display: flex;
+}
+
+.section__list {
+    margin-top: 0px;
+    align-self: center;
+}
+
+.section__image__container {
+    text-align: center;
+}
+
+.section__image {
+    width: 200px;
 }
 
 .image1 {

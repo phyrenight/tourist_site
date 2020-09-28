@@ -13,17 +13,23 @@
         }else {
             current_slide += 1; 
         }
-        update_page()
+        update_page();
     }
 
 
+    left_button.onclick = function() {
+        prev_slide = current_slide;
+        if(current_slide == 0){
+            current_slide = slides_length - 1;
+        } else {
+            current_slide -= 1
+        }
+        update_page();
+    }
+
     function update_page() {
-     console.log("current " +current_slide)
-     console.log("prev " +prev_slide)
         slides[prev_slide].classList.remove("active")
         slides[current_slide].classList.add("active");
-       // slides[prev_slide].classList.add("prev");
-
     }
 
 }(document))
